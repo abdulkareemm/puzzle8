@@ -31,6 +31,7 @@ function App() {
       }, 3000);
       return;
     }
+    console.log("solve>>>>>>>>>")
     const data = await sendData(board, boardF);
     setSolve(true)
     setBoardS(data)
@@ -54,6 +55,7 @@ function App() {
         boardF={boardF}
         setBoardF={setBoardF}
         clickHandler={clickHandler}
+        error={error}
       />)}
     </div>
   );
